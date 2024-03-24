@@ -41,4 +41,4 @@ jobs:
                   port: ${{ secrets.SSH_PORT }}
                   key: ${{ secrets.SSH_KEY }}
                   # rollout your deployment
-                  script: kubectl rollout restart deployment ${{ secrets.APPLICATION_NAME }}
+                  script: kubectl rollout restart deployment ${{ secrets.APPLICATION_NAME }} -n robert-dev

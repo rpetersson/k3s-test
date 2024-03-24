@@ -28,7 +28,7 @@ jobs:
                   context: .
                   file: ./Dockerfile
                   push: true
-                  tags: ${{ secrets.DOCKERHUB_USERNAME }}/nextjs-app
+                  tags: ${{ secrets.DOCKERHUB_USERNAME }}/nextjs-test
             - # Login to the server 
                 name: Restart K3S deployment
                 uses: appleboy/ssh-action@master

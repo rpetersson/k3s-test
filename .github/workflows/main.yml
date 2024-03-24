@@ -22,7 +22,7 @@ jobs:
                 name: Set up Docker Buildx
                 uses: docker/setup-buildx-action@v2
                 with:
-                    platforms: linux/arm64
+                    platforms: linux/arm64,linux/amd64
             - # build the container image and push it to Docker Hub
                 name: Build and push
                 uses: docker/build-push-action@v4
